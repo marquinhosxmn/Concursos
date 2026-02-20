@@ -9,7 +9,6 @@ import Testimonials from './components/Testimonials';
 import Faq from './components/Faq';
 import CheckoutSection from './components/CheckoutSection';
 import Footer from './components/Footer';
-import WhatsAppButton from './components/WhatsAppButton';
 
 function App() {
   return (
@@ -26,7 +25,6 @@ function App() {
         <CheckoutSection />
       </main>
       <Footer />
-      <WhatsAppButton />
     </div>
   );
 }

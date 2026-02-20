@@ -1,6 +1,7 @@
+
 import React from 'react';
 import Button from './Button';
-import { CheckCircle2, Star, TrendingDown } from 'lucide-react';
+import { CheckCircle2, Star, TrendingDown, Instagram } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const handleScrollToContent = () => {
@@ -21,13 +22,25 @@ const Hero: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div className="flex flex-col items-center text-center max-w-5xl mx-auto">
           
-          {/* Badge */}
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-accent-500/30 text-accent-400 text-sm font-bold mb-10 shadow-[0_0_20px_rgba(197,160,89,0.1)]">
-            <span className="relative flex h-2.5 w-2.5">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-accent-500"></span>
-            </span>
-            ÚLTIMAS VAGAS COM VALOR PROMOCIONAL
+          {/* Badges Container */}
+          <div className="flex flex-col sm:flex-row items-center gap-4 mb-10">
+            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-accent-500/30 text-accent-400 text-sm font-bold shadow-[0_0_20px_rgba(197,160,89,0.1)]">
+              <span className="relative flex h-2.5 w-2.5">
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent-400 opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-accent-500"></span>
+              </span>
+              ÚLTIMAS VAGAS COM VALOR PROMOCIONAL
+            </div>
+
+            <a 
+              href="https://instagram.com/devpromais" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-slate-900 border border-white/10 text-slate-300 text-sm font-bold hover:text-accent-400 hover:border-accent-500/30 transition-all group backdrop-blur-sm"
+            >
+              <Instagram size={16} className="text-accent-500 group-hover:scale-110 transition-transform" />
+              <span>@devpromais</span>
+            </a>
           </div>
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-black leading-[0.9] mb-10 tracking-tighter">
