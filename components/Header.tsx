@@ -15,7 +15,7 @@ const Header: React.FC = () => {
   }, []);
 
   const handleCheckout = () => {
-    window.open('https://go.pepperpay.com.br/zoye5', '_blank');
+    window.open('https://www.ggcheckout.com/checkout/v5/x7BUj7VqT8CcUfODXBSO', '_blank');
     setIsMobileMenuOpen(false);
   };
 

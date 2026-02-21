@@ -5,7 +5,7 @@ import { Check, ShieldCheck, Trophy, Star } from 'lucide-react';
 
 const CheckoutSection: React.FC = () => {
   const handleCheckout = () => {
-    window.open('https://go.pepperpay.com.br/zoye5', '_blank');
+    window.open('https://www.ggcheckout.com/checkout/v5/x7BUj7VqT8CcUfODXBSO', '_blank');
   };
 
   return (
@@ -78,7 +78,7 @@ const CheckoutSection: React.FC = () => {
               
               <div className="mt-8 flex flex-col items-center gap-2">
                 <div className="flex gap-1">
-                  {[...Array(5)].map((_, i) => <Star key={i} size={12} fill="#c5a059" className="text-accent-500" />)}
+                  {[...Array(5)].map((_, i) => <Star key={i} size={12} fill="#f59e0b" className="text-accent-500" />)}
                 </div>
                 <p className="text-[10px] text-slate-500 uppercase font-black tracking-[0.2em]">
                   Mais de 14.500 alunos aprovam
