@@ -21,16 +21,15 @@ const VideoSection: React.FC = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-slate-900 border-t border-b border-white/5 relative">
-      <div className="absolute inset-0 bg-accent-500/5 pointer-events-none"></div>
+    <section className="py-24 bg-[#020617]/50 border-t border-b border-white/10 relative">
       <div className="max-w-5xl mx-auto px-4 relative z-10">
-        <div className="text-center mb-12">
-          <span className="text-accent-400 font-semibold tracking-wider text-sm uppercase mb-3 block">Bastidores</span>
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">Veja o material por dentro</h2>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto">Assista agora e veja como o ConcursoPro+ vai acelerar sua aprovação com organização e qualidade.</p>
+        <div className="text-center mb-16">
+          <span className="text-accent-500 font-black tracking-[0.3em] text-xs uppercase mb-4 block">Bastidores</span>
+          <h2 className="text-4xl md:text-6xl font-black text-white mb-6 tracking-tighter">Veja o material <span className="gold-text">por dentro</span></h2>
+          <p className="text-slate-300 text-xl max-w-2xl mx-auto font-medium">Assista agora e veja como o ConcursoPro+ vai acelerar sua aprovação com organização e qualidade.</p>
         </div>
 
-        <div className="relative rounded-3xl overflow-hidden bg-slate-950 shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-accent-500/20 max-w-4xl mx-auto">
+        <div className="relative rounded-[2.5rem] overflow-hidden bg-slate-950 shadow-[0_0_80px_-20px_rgba(245,158,11,0.2)] border border-accent-500/30 max-w-4xl mx-auto">
           <style>
             {`wistia-player[media-id='v9bzqklo3y']:not(:defined) { background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/v9bzqklo3y/swatch'); display: block; filter: blur(5px); padding-top:56.25%; }`}
           </style>

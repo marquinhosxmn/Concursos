@@ -4,7 +4,7 @@ import { Quote } from 'lucide-react';
 
 const Testimonials: React.FC = () => {
   return (
-    <section className="py-24 bg-slate-900 border-t border-b border-white/5">
+    <section className="py-24 bg-[#020617]/30 border-t border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">O que dizem nossos alunos</h2>
@@ -13,16 +13,16 @@ const Testimonials: React.FC = () => {
 
         <div className="grid md:grid-cols-3 gap-8">
           {TESTIMONIALS.map((t, i) => (
-            <div key={i} className="bg-slate-950 p-8 rounded-2xl relative border border-white/5 hover:border-white/10 transition-colors">
-              <Quote className="absolute top-6 right-6 text-slate-800 w-10 h-10" />
+            <div key={i} className="bg-slate-800/80 p-8 rounded-3xl relative border border-white/10 hover:border-accent-500/50 transition-all duration-300 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.7)] backdrop-blur-md group">
+              <Quote className="absolute top-6 right-6 text-slate-700/30 w-12 h-12 group-hover:text-accent-500/20 transition-colors" />
               <div className="flex items-center gap-4 mb-6">
-                <img src={t.image} alt={t.name} className="w-14 h-14 rounded-full object-cover ring-2 ring-accent-500 ring-offset-2 ring-offset-slate-950" />
+                <img src={t.image} alt={t.name} className="w-14 h-14 rounded-full object-cover ring-2 ring-accent-500 ring-offset-2 ring-offset-slate-800 shadow-lg" />
                 <div>
-                  <h4 className="font-bold text-white">{t.name}</h4>
-                  <p className="text-xs text-accent-400 font-semibold uppercase">{t.role}</p>
+                  <h4 className="font-bold text-white tracking-tight">{t.name}</h4>
+                  <p className="text-xs text-accent-500 font-black uppercase tracking-widest">{t.role}</p>
                 </div>
               </div>
-              <p className="text-slate-300 italic leading-relaxed">"{t.text}"</p>
+              <p className="text-slate-100 italic leading-relaxed font-medium">"{t.text}"</p>
             </div>
           ))}
         </div>

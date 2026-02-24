@@ -3,6 +3,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import VideoSection from './components/VideoSection';
 import HowItWorks from './components/HowItWorks';
+import CourseList from './components/CourseList';
 import Features from './components/Features';
 import TargetAudience from './components/TargetAudience';
 import Testimonials from './components/Testimonials';
@@ -17,6 +18,7 @@ function App() {
       <main>
         <Hero />
         <VideoSection />
+        <CourseList />
         <HowItWorks />
         <Features />
         <TargetAudience />

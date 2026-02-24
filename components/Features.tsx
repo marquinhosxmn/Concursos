@@ -3,8 +3,8 @@ import { FEATURES, PLATFORMS } from '../constants';
 
 const Features: React.FC = () => {
   return (
-    <section id="conteudo" className="py-24 bg-slate-900 border-t border-b border-white/5">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="conteudo" className="py-24 bg-slate-900/50 border-t border-b border-white/10 relative">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
         {/* Features Grid */}
         <div className="text-center mb-16">
@@ -12,14 +12,14 @@ const Features: React.FC = () => {
           <p className="text-slate-400 max-w-2xl mx-auto">Tudo o que você precisa para ser aprovado, reunido em um único lugar.</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-24">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 mb-16 md:mb-24">
           {FEATURES.map((feature, index) => (
-            <div key={index} className="p-8 rounded-2xl bg-slate-800 hover:bg-slate-800/80 border border-white/5 hover:border-accent-500/20 shadow-sm transition-all duration-300 group">
-              <div className="w-14 h-14 bg-slate-900 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent-500 transition-colors duration-300 border border-white/5 group-hover:border-accent-500">
-                <feature.icon className="text-accent-400 group-hover:text-slate-950 transition-colors duration-300" size={28} />
+            <div key={index} className="p-6 md:p-8 rounded-2xl bg-slate-800/80 border border-white/10 hover:border-accent-500/50 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.6)] hover:shadow-accent-500/20 transition-all duration-300 group backdrop-blur-sm">
+              <div className="w-12 h-12 md:w-14 md:h-14 bg-slate-900 rounded-xl flex items-center justify-center mb-4 md:mb-6 group-hover:bg-accent-500 transition-colors duration-300 border border-white/10 group-hover:border-accent-500 shadow-inner">
+                <feature.icon className="text-accent-400 group-hover:text-slate-950 transition-colors duration-300" size={24} />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">{feature.title}</h3>
-              <p className="text-slate-400">{feature.description}</p>
+              <h3 className="text-lg md:text-xl font-bold text-white mb-2 md:mb-3 tracking-tight">{feature.title}</h3>
+              <p className="text-slate-300 text-sm md:text-base leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>

@@ -43,6 +43,7 @@ const Header: React.FC = () => {
           {/* Desktop Nav */}
           <nav className="hidden md:flex items-center gap-8">
             <a href="#como-funciona" className="text-sm font-medium text-slate-300 hover:text-accent-400 transition-colors">Como funciona</a>
+            <a href="#lista-cursos" className="text-sm font-medium text-slate-300 hover:text-accent-400 transition-colors">Lista de Cursos</a>
             <a href="#conteudo" className="text-sm font-medium text-slate-300 hover:text-accent-400 transition-colors">O que inclui</a>
             <a href="#faq" className="text-sm font-medium text-slate-300 hover:text-accent-400 transition-colors">Dúvidas</a>
             <Button size="sm" onClick={handleCheckout}>
@@ -64,6 +65,7 @@ const Header: React.FC = () => {
       {isMobileMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-slate-900 shadow-xl border-t border-white/5 py-4 px-4 flex flex-col gap-4">
           <a href="#como-funciona" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-300 hover:text-white font-medium py-2">Como funciona</a>
+          <a href="#lista-cursos" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-300 hover:text-white font-medium py-2">Lista de Cursos</a>
           <a href="#conteudo" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-300 hover:text-white font-medium py-2">O que inclui</a>
           <a href="#faq" onClick={() => setIsMobileMenuOpen(false)} className="text-slate-300 hover:text-white font-medium py-2">Dúvidas</a>
           <Button fullWidth onClick={handleCheckout}>

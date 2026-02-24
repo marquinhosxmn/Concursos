@@ -21,25 +21,25 @@ const HowItWorks: React.FC = () => {
   ];
 
   return (
-    <section id="como-funciona" className="py-20 bg-slate-950">
+    <section id="como-funciona" className="py-24 bg-[#020617]/20 border-t border-white/5">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <span className="text-accent-400 font-semibold tracking-wider text-sm uppercase">Passo a Passo</span>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mt-2">Como funciona?</h2>
+          <span className="text-accent-500 font-black tracking-[0.3em] text-xs uppercase">Passo a Passo</span>
+          <h2 className="text-4xl md:text-5xl font-black text-white mt-4 tracking-tighter">Como <span className="gold-text">funciona?</span></h2>
         </div>
 
         <div className="grid md:grid-cols-3 gap-8">
           {steps.map((step, index) => (
-            <div key={index} className="relative flex flex-col items-center text-center p-8 bg-slate-900 rounded-2xl shadow-lg border border-white/5 hover:border-accent-500/30 transition-all duration-300">
-              <div className="w-16 h-16 bg-slate-800 rounded-full flex items-center justify-center mb-6 text-accent-400 ring-1 ring-accent-500/20">
-                <step.icon size={32} />
+            <div key={index} className="relative flex flex-col items-center text-center p-10 bg-slate-800/60 rounded-[2rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.7)] border border-white/10 hover:border-accent-500/50 transition-all duration-300 group backdrop-blur-md">
+              <div className="w-20 h-20 bg-slate-900 rounded-2xl flex items-center justify-center mb-8 text-accent-500 ring-1 ring-accent-500/30 group-hover:bg-accent-500 group-hover:text-slate-950 transition-all shadow-inner">
+                <step.icon size={36} />
               </div>
-              <h3 className="text-xl font-bold text-white mb-3">{step.title}</h3>
-              <p className="text-slate-400 leading-relaxed">{step.description}</p>
+              <h3 className="text-2xl font-black text-white mb-4 tracking-tight">{step.title}</h3>
+              <p className="text-slate-200 leading-relaxed font-medium">{step.description}</p>
               
               {/* Connector Line (Desktop Only) */}
               {index < steps.length - 1 && (
-                <div className="hidden md:block absolute top-16 -right-4 w-8 h-px bg-slate-800"></div>
+                <div className="hidden md:block absolute top-20 -right-4 w-8 h-[2px] bg-accent-500/30"></div>
               )}
             </div>
           ))}
