@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Button from './Button';
 
 const VideoSection: React.FC = () => {
   useEffect(() => {
@@ -38,10 +39,21 @@ const VideoSection: React.FC = () => {
         </div>
         
         <div className="mt-10 text-center">
-          <p className="text-slate-500 text-sm flex items-center justify-center gap-2">
+          <p className="text-slate-500 text-sm flex items-center justify-center gap-2 mb-8">
             <span className="w-2 h-2 rounded-full bg-accent-500 animate-pulse"></span>
             Mais de 14.500 alunos já assistiram
           </p>
+          
+          <div className="md:hidden">
+            <Button 
+              fullWidth 
+              withIcon 
+              onClick={() => window.open('https://www.ggcheckout.com/checkout/v5/x7BUj7VqT8CcUfODXBSO', '_blank')}
+              className="shadow-gold-glow-strong"
+            >
+              LIBERAR MEU ACESSO
+            </Button>
+          </div>
         </div>
       </div>
     </section>

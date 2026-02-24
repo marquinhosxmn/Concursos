@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { GraduationCap, Menu, X } from 'lucide-react';
-import Button from './Button';
+import { Button } from './Button';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);

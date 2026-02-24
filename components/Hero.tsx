@@ -1,14 +1,11 @@
 
 import React from 'react';
-import Button from './Button';
+import { Button } from './Button';
 import { CheckCircle2, Star, TrendingDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
-  const handleScrollToContent = () => {
-    const element = document.getElementById('conteudo');
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
+  const handleCheckout = () => {
+    window.open('https://www.ggcheckout.com/checkout/v5/x7BUj7VqT8CcUfODXBSO', '_blank');
   };
 
   return (
@@ -54,10 +51,10 @@ const Hero: React.FC = () => {
                 </div>
               </div>
 
-              <Button size="lg" withIcon onClick={handleScrollToContent} className="px-10 md:px-16 py-5 md:py-7 text-xl md:text-2xl w-full sm:w-auto shadow-gold-glow-strong animate-pulse-soft">
-                ENTRAR AGORA
+              <Button size="lg" withIcon onClick={handleCheckout} className="px-10 md:px-16 py-5 md:py-7 text-xl md:text-2xl w-full sm:w-auto shadow-gold-glow-strong animate-pulse-soft">
+                QUERO MEU ACESSO AGORA
               </Button>
-              <p className="text-[10px] text-slate-500 uppercase tracking-[0.3em] font-black">Conheça o conteúdo exclusivo abaixo</p>
+              <p className="text-[10px] text-slate-500 uppercase tracking-[0.3em] font-black">Liberação imediata após o pagamento</p>
             </div>
           </div>
 

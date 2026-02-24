@@ -1,7 +1,12 @@
 import React from 'react';
 import { Lock, Send, BookOpenCheck } from 'lucide-react';
+import { Button } from './Button';
 
 const HowItWorks: React.FC = () => {
+  const handleCheckout = () => {
+    window.open('https://www.ggcheckout.com/checkout/v5/x7BUj7VqT8CcUfODXBSO', '_blank');
+  };
+
   const steps = [
     {
       icon: Lock,
@@ -28,7 +33,7 @@ const HowItWorks: React.FC = () => {
           <h2 className="text-4xl md:text-5xl font-black text-white mt-4 tracking-tighter">Como <span className="gold-text">funciona?</span></h2>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
           {steps.map((step, index) => (
             <div key={index} className="relative flex flex-col items-center text-center p-10 bg-slate-800/60 rounded-[2rem] shadow-[0_30px_60px_-15px_rgba(0,0,0,0.7)] border border-white/10 hover:border-accent-500/50 transition-all duration-300 group backdrop-blur-md">
               <div className="w-20 h-20 bg-slate-900 rounded-2xl flex items-center justify-center mb-8 text-accent-500 ring-1 ring-accent-500/30 group-hover:bg-accent-500 group-hover:text-slate-950 transition-all shadow-inner">
@@ -43,6 +48,12 @@ const HowItWorks: React.FC = () => {
               )}
             </div>
           ))}
+        </div>
+
+        <div className="flex justify-center">
+          <Button size="lg" withIcon onClick={handleCheckout} className="shadow-gold-glow-strong">
+            QUERO COMEÇAR AGORA
+          </Button>
         </div>
       </div>
     </section>

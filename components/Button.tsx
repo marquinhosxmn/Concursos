@@ -9,7 +9,7 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   size?: 'sm' | 'md' | 'lg';
 }
 
-const Button: React.FC<ButtonProps> = ({ 
+export const Button: React.FC<ButtonProps> = ({ 
   children, 
   variant = 'primary', 
   fullWidth = false, 

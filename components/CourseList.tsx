@@ -1,6 +1,7 @@
 import React, { useState, useMemo } from 'react';
 import { Search, BookOpen, ExternalLink } from 'lucide-react';
 import { COURSES } from '@/courses';
+import Button from './Button';
 
 const CourseList: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -69,7 +70,18 @@ const CourseList: React.FC = () => {
           )}
         </div>
 
-        <div className="mt-12 text-center">
+        <div className="mt-12 text-center flex flex-col items-center gap-8">
+          <div className="md:hidden w-full">
+            <Button 
+              fullWidth 
+              withIcon 
+              onClick={() => window.open('https://www.ggcheckout.com/checkout/v5/x7BUj7VqT8CcUfODXBSO', '_blank')}
+              className="shadow-gold-glow-strong"
+            >
+              GARANTIR MINHA VAGA
+            </Button>
+          </div>
+
           <a 
             href="https://docs.google.com/spreadsheets/d/1pBXjjO8gw6VsQ_zBhiAfjW9mrbOZ6SZFPeApBmQ09yQ/edit?usp=sharing" 
             target="_blank" 

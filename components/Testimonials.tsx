@@ -1,8 +1,13 @@
 import React from 'react';
 import { TESTIMONIALS } from '../constants';
 import { Quote } from 'lucide-react';
+import { Button } from './Button';
 
 const Testimonials: React.FC = () => {
+  const handleCheckout = () => {
+    window.open('https://www.ggcheckout.com/checkout/v5/x7BUj7VqT8CcUfODXBSO', '_blank');
+  };
+
   return (
     <section className="py-24 bg-[#020617]/30 border-t border-b border-white/10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,7 +16,7 @@ const Testimonials: React.FC = () => {
           <p className="text-slate-400">Junte-se a milhares de concurseiros que já estão estudando conosco.</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
           {TESTIMONIALS.map((t, i) => (
             <div key={i} className="bg-slate-800/80 p-8 rounded-3xl relative border border-white/10 hover:border-accent-500/50 transition-all duration-300 shadow-[0_20px_50px_-15px_rgba(0,0,0,0.7)] backdrop-blur-md group">
               <Quote className="absolute top-6 right-6 text-slate-700/30 w-12 h-12 group-hover:text-accent-500/20 transition-colors" />
@@ -25,6 +30,12 @@ const Testimonials: React.FC = () => {
               <p className="text-slate-100 italic leading-relaxed font-medium">"{t.text}"</p>
             </div>
           ))}
+        </div>
+
+        <div className="flex justify-center">
+          <Button size="lg" withIcon onClick={handleCheckout} className="shadow-gold-glow-strong">
+            QUERO SER APROVADO TAMBÉM
+          </Button>
         </div>
       </div>
     </section>

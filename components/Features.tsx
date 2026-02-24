@@ -1,7 +1,12 @@
 import React from 'react';
 import { FEATURES, PLATFORMS } from '../constants';
+import { Button } from './Button';
 
 const Features: React.FC = () => {
+  const handleCheckout = () => {
+    window.open('https://www.ggcheckout.com/checkout/v5/x7BUj7VqT8CcUfODXBSO', '_blank');
+  };
+
   return (
     <section id="conteudo" className="py-24 bg-slate-900/50 border-t border-b border-white/10 relative">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -25,7 +30,7 @@ const Features: React.FC = () => {
         </div>
 
         {/* Platforms Section */}
-        <div className="bg-slate-950 rounded-3xl p-8 md:p-12 text-center text-white relative overflow-hidden border border-white/10">
+        <div className="bg-slate-950 rounded-3xl p-8 md:p-12 text-center text-white relative overflow-hidden border border-white/10 mb-16">
           <div className="absolute top-0 left-0 w-full h-full opacity-30 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-slate-800 via-slate-950 to-slate-950"></div>
           
           <div className="relative z-10">
@@ -41,6 +46,12 @@ const Features: React.FC = () => {
               *O ConcursoPro+ é um grupo de rateio e curadoria de conteúdos educacionais. As marcas citadas pertencem aos seus respectivos proprietários.
             </p>
           </div>
+        </div>
+
+        <div className="flex justify-center">
+          <Button size="lg" withIcon onClick={handleCheckout} className="shadow-gold-glow-strong">
+            GARANTIR MEU ACESSO VIP
+          </Button>
         </div>
 
       </div>

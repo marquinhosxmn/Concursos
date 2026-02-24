@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FAQS } from '../constants';
 import { ChevronDown, ChevronUp } from 'lucide-react';
+import Button from './Button';
 
 const Faq: React.FC = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
@@ -41,6 +42,17 @@ const Faq: React.FC = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        <div className="md:hidden mt-12">
+          <Button 
+            fullWidth 
+            withIcon 
+            onClick={() => window.open('https://www.ggcheckout.com/checkout/v5/x7BUj7VqT8CcUfODXBSO', '_blank')}
+            className="shadow-gold-glow-strong"
+          >
+            TENHO INTERESSE
+          </Button>
         </div>
       </div>
     </section>

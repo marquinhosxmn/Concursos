@@ -1,5 +1,5 @@
 import React from 'react';
-import Button from './Button';
+import { Button } from './Button';
 // Added Star to the imported icons from lucide-react
 import { Check, ShieldCheck, Trophy, Star } from 'lucide-react';
 
