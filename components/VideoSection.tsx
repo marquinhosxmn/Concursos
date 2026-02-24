@@ -1,7 +1,11 @@
 import React, { useEffect } from 'react';
-import Button from './Button';
+import { Button } from './Button';
 
 const VideoSection: React.FC = () => {
+  const handleCheckout = () => {
+    window.open('https://www.ggcheckout.com/checkout/v5/x7BUj7VqT8CcUfODXBSO', '_blank');
+  };
+
   useEffect(() => {
     // Carrega os scripts do Wistia dinamicamente
     const script1 = document.createElement('script');
@@ -38,22 +42,15 @@ const VideoSection: React.FC = () => {
           <wistia-player media-id="v9bzqklo3y" aspect="1.7777777777777777"></wistia-player>
         </div>
         
-        <div className="mt-10 text-center">
-          <p className="text-slate-500 text-sm flex items-center justify-center gap-2 mb-8">
+        <div className="mt-10 text-center flex flex-col items-center gap-8">
+          <p className="text-slate-500 text-sm flex items-center justify-center gap-2">
             <span className="w-2 h-2 rounded-full bg-accent-500 animate-pulse"></span>
             Mais de 14.500 alunos já assistiram
           </p>
           
-          <div className="md:hidden">
-            <Button 
-              fullWidth 
-              withIcon 
-              onClick={() => window.open('https://www.ggcheckout.com/checkout/v5/x7BUj7VqT8CcUfODXBSO', '_blank')}
-              className="shadow-gold-glow-strong"
-            >
-              LIBERAR MEU ACESSO
-            </Button>
-          </div>
+          <Button size="lg" withIcon onClick={handleCheckout} className="shadow-gold-glow-strong animate-pulse-soft">
+            QUERO ACESSO AO MATERIAL
+          </Button>
         </div>
       </div>
     </section>
