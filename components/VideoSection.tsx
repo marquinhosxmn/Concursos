@@ -3,7 +3,7 @@ import { Button } from './Button';
 
 const VideoSection: React.FC = () => {
   const handleCheckout = () => {
-    window.open('https://www.ggcheckout.com/checkout/v5/x7BUj7VqT8CcUfODXBSO', '_blank');
+    window.open('https://ggcheckout.com.br/checkout/v3/x7BUj7VqT8CcUfODXBSO', '_blank');
   };
 
   useEffect(() => {

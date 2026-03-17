@@ -75,7 +75,7 @@ const CourseList: React.FC = () => {
             <Button 
               fullWidth 
               withIcon 
-              onClick={() => window.open('https://www.ggcheckout.com/checkout/v5/x7BUj7VqT8CcUfODXBSO', '_blank')}
+              onClick={() => window.open('https://ggcheckout.com.br/checkout/v3/x7BUj7VqT8CcUfODXBSO', '_blank')}
               className="shadow-gold-glow-strong"
             >
               GARANTIR MINHA VAGA
