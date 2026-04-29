@@ -5,7 +5,7 @@ import { Button } from './Button';
 
 const Testimonials: React.FC = () => {
   const handleCheckout = () => {
-    window.open('https://ggcheckout.com.br/checkout/v3/x7BUj7VqT8CcUfODXBSO', '_blank');
+    window.open('https://pay.wiapy.com/maQ0QPFEAA', '_blank');
   };
 
   return (
