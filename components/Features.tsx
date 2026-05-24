@@ -4,7 +4,7 @@ import { Button } from './Button';
 
 const Features: React.FC = () => {
   const handleCheckout = () => {
-    window.open('https://pay.wiapy.com/maQ0QPFEAA', '_blank');
+    window.open('https://ggcheckout.app/checkout/v5/x7BUj7VqT8CcUfODXBSO', '_blank');
   };
 
   return (
