@@ -4,7 +4,7 @@ import { Button } from './Button';
 
 const TargetAudience: React.FC = () => {
   const handleCheckout = () => {
-    window.open('https://ggcheckout.app/checkout/v5/x7BUj7VqT8CcUfODXBSO', '_blank');
+    window.open('https://go.pepperpay.com.br/qvr0s', '_blank');
   };
 
   const points = [

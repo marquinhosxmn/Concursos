@@ -5,7 +5,7 @@ import { CheckCircle2, Star, TrendingDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
   const handleCheckout = () => {
-    window.open('https://ggcheckout.app/checkout/v5/x7BUj7VqT8CcUfODXBSO', '_blank');
+    window.open('https://go.pepperpay.com.br/qvr0s', '_blank');
   };
 
   return (
