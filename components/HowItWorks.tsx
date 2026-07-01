@@ -4,7 +4,7 @@ import { Button } from './Button';
 
 const HowItWorks: React.FC = () => {
   const handleCheckout = () => {
-    window.open('https://go.pepperpay.com.br/qvr0s', '_blank');
+    window.open('https://pay.wiapy.com/maQ0QPFEAA', '_blank');
   };
 
   const steps = [
